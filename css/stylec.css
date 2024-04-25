@@ -1,0 +1,80 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f7e9d7; /* A warm, cookie-dough-like background color */
+    font-family: 'Georgia', serif; /* Elegant, readable typeface */
+    color: #333; /* Dark grey text for readability */
+    line-height: 1.6; /* Spacing out the text a bit */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px; /* Maximum width of the content */
+    margin: 20px auto; /* Centering the container */
+    padding: 20px;
+    background-color: #ffffff; /* White background for content areas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05); /* Subtle shadow for 3D effect */
+}
+
+header {
+    text-align: center;
+    padding: 10px 0; /* Top and bottom padding */
+    border-bottom: 1px solid #ccc; /* Light line under the header */
+}
+
+header h1 {
+    color: #b34700; /* Dark orange, like chocolate chips */
+    font-size: 24px; /* Larger text for the heading */
+}
+
+nav a {
+    text-decoration: none;
+    color: #b34700;
+    font-size: 18px;
+}
+
+main {
+    padding: 15px 0; /* Padding inside the main content area */
+}
+
+ol {
+    counter-reset: item; /* Resetting counter for ordered list */
+    padding-left: 20px; /* Space before list */
+}
+
+ol > li {
+    counter-increment: item; /* Increasing counter for each item */
+    margin-bottom: 10px; /* Space between items */
+}
+
+ol > li:before {
+    content: counters(item, ".") " "; /* Adding numbers before items */
+    font-weight: bold; /* Making numbers bold */
+    color: #b34700; /* Using the same dark orange color */
+}
+
+ul {
+    padding-left: 40px; /* Indentation for unordered list */
+}
+
+.video, .graph {
+    text-align: center; /* Center-aligning video and graph */
+    margin: 20px 0; /* Margin around video and graph for spacing */
+}
+
+iframe {
+    border: none; /* Removing default iframe border */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    color: #666; /* Darker grey for footer to differentiate from body text */
+    border-top: 1px solid #ccc; /* Light line at the top of the footer */
+}
